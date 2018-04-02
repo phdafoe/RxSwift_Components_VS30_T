@@ -55,6 +55,8 @@ class ViewController: UIViewController {
             self?.selectedSalaryRangeLabel.text = self?.viewModel.getSalaryString()
         }
         
+        
+        
         selectedYearsOfExperienceLabel.observe(for: viewModel.yearsOfExperience) { [weak self](_) in
             self?.selectedYearsOfExperienceLabel.text = self?.viewModel.getExperienceString()
         }
